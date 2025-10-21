@@ -9,10 +9,19 @@ Prerequisites:
 - JDK 17+
 - Maven (or use included wrappers: `./mvnw` / `mvnw.cmd`)
 
-Build and run:
--Clone the project
--Change the database name, username and password in the application.properties files 
--Run the LomsApplication (main method) class
+## Build and run 
+
+1. Clone the project:
+```powershell
+git clone https://your.git.repo.url/your-repo.git
+cd new_loan_management_system
+```
+
+2. Change database credentials:
+- Open application properties files (e.g. `src/main/resources/application.properties` and any profile files like `src/main/resources/application-*.properties`) and update:
+    - spring.datasource.url (change database name)
+    - spring.datasource.username
+    - spring.datasource.password
 
 ## File Structure
 ```
