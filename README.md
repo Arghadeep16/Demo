@@ -10,18 +10,35 @@ Prerequisites:
 - Maven (or use included wrappers: `./mvnw` / `mvnw.cmd`)
 
 Build and run:
-```sh
-./mvnw clean package
-./mvnw spring-boot:run
-# or
-mvn clean package
-java -jar target/*.jar
-```
+-Clone the project
+-Change the database name, username and password in the application.properties files 
+-Run the LomsApplication (main method) class
 
-Run tests:
-```sh
-./mvnw test
-```
+## File Structure
+C:.
+├───.idea
+├───.mvn
+│   └───wrapper
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───com
+│   │   │       └───genc
+│   │   │           └───loms
+│   │   │               ├───controller
+│   │   │               ├───dto
+│   │   │               ├───entity
+│   │   │               ├───repository
+│   │   │               └───service
+│   │   └───resources
+│   │       └───static
+│   └───test
+│       └───java
+│           └───com
+│               └───genc
+│                   └───loms
+
+
 
 ## API highlights
 
@@ -102,9 +119,3 @@ These pages call the API endpoints above (see inline JS in each file).
 - Add unit tests under `src/test/java`.
 - Run `./mvnw -DskipTests=false verify` before PR.
 
-## License
-
-Proprietary / project-internal.
-
-<!-- end of README -->
-// ...existing code...
