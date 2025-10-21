@@ -15,6 +15,7 @@ Build and run:
 -Run the LomsApplication (main method) class
 
 ## File Structure
+```
 C:.
 ├───.idea
 ├───.mvn
@@ -37,6 +38,7 @@ C:.
 │           └───com
 │               └───genc
 │                   └───loms
+```
 
 
 
